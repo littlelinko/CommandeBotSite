@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title> Commande DeimosDouxBot </title>
+	<meta charset="UTF-8">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+.side{
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+.menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+}
+
+ul {
+    text-align:left
+}
+
+</style>
+</head>
+<body>
+    
+    <div class="side"></div>
+<div class="menu">
+    <h1> Liste des commandes audio: </h1>
+<ul>
+<li>!culture</li>
+<li>!dodo</li>
+<li>!prof</li>
+<li>!ton</li>
+<li>!vu</li>
+</ul>
+
+<h1> Liste des commandes classique: </h1>
+<ul>
+<li>!Twitter</li>
+<li>!Discord</li>
+<li>!Yt</li>
+<li>!Game</li>
+<li>!Uptime</li>
+<li>!Time</li>
+<li>!Age</li>
+<li>!Quote</li>
+<li>!Searchquote</li>
+<li>!Followage</li>
+<li>!Title</li>
+<li>!Game</li>
+<li>!Playtime</li>
+<li>!Lastseen PSEUDO</li>
+<li>!Vod</li>
+</ul>
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="SamplePlayerDivID"></div>
+<script type="text/javascript">
+  var options = {
+    width: 854,
+    height: 480,
+    channel: "littlelinko",
+  };
+  var player = new Twitch.Player("SamplePlayerDivID", options);
+  player.setVolume(0.5);
+</script>
+</div>   
+</body>
+</html>
